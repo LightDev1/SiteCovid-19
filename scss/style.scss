@@ -2,7 +2,7 @@ $borderParent: 3px solid red;
 $borderChild: 2px solid blue;
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter' sans-serif;
 }
 
 header {
@@ -36,6 +36,27 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-top: 32px;
+
+    .m__links {
+        display: none;
+    }
+
+    .m-menu {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2000;
+        background: #112950;
+        height: 50vh;
+        width: 250px;
+        transition: 0.2s;
+        transform: translateX(100%);
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
 
     .links {
         display: flex;
